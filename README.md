@@ -26,4 +26,5 @@ It covers typical use cases for a new project and will help you not to waste you
 
 # READ MORE
 If you have query regarding Starter kit, Drop your query at rahul_matharu@handysolver.com
+
 @CopyRight by Handysolver.com(http://handysolver.com)
