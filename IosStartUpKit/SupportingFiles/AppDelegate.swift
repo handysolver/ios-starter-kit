@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  IosStartUpKit
+//  Auto Accounting
 //
-//  Created by HSM3 on 21/09/17.
+//  Created by HSM3 on 20/09/17.
 //  Copyright © 2017 HandySolver. All rights reserved.
 //
 
@@ -14,8 +14,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    func checkLogin() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        if(UserDefaultsManager.userDefaultsManager.getUserId().isEmpty) {
+            
+            print(UserDefaultsManager.userDefaultsManager.getUserId())
+            
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+        else {
+            print(UserDefaultsManager.userDefaultsManager.getUserId())
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "SlideMenuContainer")
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+            
+        }
+        
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+         checkLogin()
+        
+        
+        
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.tintColor = UIColor.white
+        navBarAppearance.barTintColor = UIColor.init(hex: APP_COLOR_PRIMARY)
+        navBarAppearance.isTranslucent = false
+   
+        
+        
         return true
     }
 
