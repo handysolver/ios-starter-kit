@@ -22,7 +22,7 @@ It covers typical use cases for a new project and will help you not to waste you
 10. Audio Manager
 11. Video Manager
 12. IBDesignable Classes
-13. Third Party Libraries -> Realm , Loading Indicators , Banners , Swifty JSon
+13. Third Party Libraries -> Realm, Loading Indicators, Carbon kit, Slide Menu, Banners, Swifty JSon, EAIntroView
 
 # READ MORE
 
