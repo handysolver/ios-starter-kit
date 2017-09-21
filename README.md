@@ -11,7 +11,7 @@ It covers typical use cases for a new project and will help you not to waste you
 # Features
 
 1. Intro Pages 
-2. Api Managers
+2. Api Managers (Sample API call exist in the login and signup view controller)
 3. Database Mangers 
 4. Simple Login Module
 5. Signup Module
@@ -25,5 +25,5 @@ It covers typical use cases for a new project and will help you not to waste you
 13. Third Party Libraries -> Realm, Loading Indicators, Carbon kit, Slide Menu, Banners, Swifty JSon, EAIntroView
 
 # READ MORE
-
+If you have query regarding Starter kit, Drop your query at rahul_matharu@handysolver.com
 @CopyRight by Handysolver.com(http://handysolver.com)
